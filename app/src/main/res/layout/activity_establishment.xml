@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <!-- Постер заведения -->
+        <ImageView
+                android:id="@+id/poster_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/estab_poster"
+                android:scaleType="centerCrop" />
+
+        <!-- Название заведения -->
+        <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/poster_image_view"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:text="Название заведения"
+                android:textSize="24sp"
+                android:textColor="@android:color/black" />
+
+        <!-- Время работы -->
+        <TextView
+                android:id="@+id/working_hours_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_text_view"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="Время работы: 10:00 - 22:00"
+                android:textSize="18sp"
+                android:textColor="@android:color/darker_gray" />
+
+        <!-- Вкладки -->
+        <LinearLayout
+                android:id="@+id/tabs_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/working_hours_text_view"
+                android:orientation="vertical">
+
+            <!-- Меню -->
+            <LinearLayout
+                    android:id="@+id/menu_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/menu_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Меню"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:background="?attr/selectableItemBackground" />
+
+                <!-- Содержимое Меню -->
+                <LinearLayout
+                        android:id="@+id/menu_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    <!-- Сюда добавьте содержимое вкладки Меню -->
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="жесткое меню"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:background="?attr/selectableItemBackground" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Акции -->
+            <LinearLayout
+                    android:id="@+id/promotions_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/promotions_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Акции"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:background="?attr/selectableItemBackground" />
+
+                <!-- Содержимое Акции -->
+                <LinearLayout
+                        android:id="@+id/promotions_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    <!-- Сюда добавьте содержимое вкладки Акции -->
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="жесткие акции"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:background="?attr/selectableItemBackground" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Баллы/прогресс в акциях -->
+            <LinearLayout
+                    android:id="@+id/points_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/points_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Баллы/прогресс в акциях"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:background="?attr/selectableItemBackground" />
+
+                <!-- Содержимое Баллы/прогресс в акциях -->
+                <LinearLayout
+                        android:id="@+id/points_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    <!-- Сюда добавьте содержимое вкладки Баллы/прогресс в акциях -->
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="жесткие баллы"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:background="?attr/selectableItemBackground" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Отзывы -->
+            <LinearLayout
+                    android:id="@+id/reviews_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/reviews_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Отзывы"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:background="?attr/selectableItemBackground" />
+
+                <!-- Содержимое Отзывы -->
+                <LinearLayout
+                        android:id="@+id/reviews_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                    <!-- Сюда добавьте содержимое вкладки Отзывы -->
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="жесткие отзывы"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:background="?attr/selectableItemBackground" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- О заведении -->
+            <LinearLayout
+                    android:id="@+id/about_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/about_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="О заведении"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:background="?attr/selectableItemBackground" />
+
+                <!-- Содержимое О заведении -->
+                <LinearLayout
+                        android:id="@+id/about_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <!-- Сюда добавьте содержимое вкладки О заведении -->
+                    <TextView
+                            android:text="Описание заведения"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/establishment_description_title"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="жесткая информация о жестком заведении"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:background="?attr/selectableItemBackground"
+                            android:id="@+id/establishment_description"/>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/establishment_address_title"
+                            android:text="Адрес заведения"/>
+                    <TextView
+                            android:text="Улица Пушкина дом Колотушкина"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/establishment_address"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

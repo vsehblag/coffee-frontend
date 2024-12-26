@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DealFinderApp_v3</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_support_phone">Телефон поддержки</string>
+    <string name="support_phone">+7 913 409 22 44</string>
+    <string name="support_email_title">vildyaykin.2000@mail.ru</string>
+    <string name="support_email">dealfinder@deal.find.com</string>
+    <string name="logout_button_text">Выйти из профиля</string>
+    <string name="profile_username">Юрий Вильдяйкин</string>
+    <string name="support_button">Поддержка</string>
+    <string name="title_my_promotions">Мои акции</string>
+</resources>

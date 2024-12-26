@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.profile.ProfileFragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+        >
+            <ImageView
+                    android:src="@drawable/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="198dp" android:id="@+id/imageView" app:srcCompat="@drawable/profile"/>
+            <TextView
+                    android:text="@string/profile_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/profile_username_text" android:textSize="24sp"
+                    android:fontFamily="@font/abril_fatface" android:typeface="normal" android:textStyle="bold"/>
+            <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="?android:attr/listDivider"
+            />
+            <Button
+                    android:text="@string/logout_button_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/logout_button"/>
+            <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="?android:attr/listDivider"
+            />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="412dp"
+                    android:layout_height="151dp">
+                <Button
+                        android:text="@string/support_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/support_button"/>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="408dp"
+                        android:padding="4dp"
+                        android:visibility="gone"
+                        android:layout_height="155dp" android:id="@+id/expandableLayout">
+                    <TextView
+                            android:text="@string/title_support_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/support_phone_title"
+                            android:textSize="24sp"
+                            android:textAlignment="textStart" android:textStyle="bold"
+                            android:background="@color/title_color"
+                            android:fontFamily="serif-monospace"/>
+                    <TextView
+                            android:text="@string/support_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/support_phone" android:textSize="20sp"
+
+                            android:autoLink="all"/>
+                    <TextView
+                            android:text="@string/support_email_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/support_email_title"
+                            android:textSize="24sp"
+                            android:textAlignment="textStart" android:textStyle="bold"
+                            android:fontFamily="serif-monospace" android:background="@color/title_color"/>
+                    <TextView
+                            android:text="@string/support_email"
+                            android:layout_width="match_parent"
+
+                            android:autoLink="all"
+                            android:layout_height="wrap_content" android:id="@+id/support_email"
+                            android:textSize="20sp"/>
+                </LinearLayout>
+                <Button
+                        android:text="Стать партнером"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/become_a_partner"/>
+                <Button
+                        android:text="FAQ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/faq_button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
